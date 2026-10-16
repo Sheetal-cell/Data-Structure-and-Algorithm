@@ -1,0 +1,11 @@
+class Solution:
+    def armstrongNumber (self, n):
+        # code here 
+        summ=0
+        num=n
+        while n!=0:
+            rem=n%10
+            n=n//10
+            summ+=rem**3
+            
+        return num==summ
