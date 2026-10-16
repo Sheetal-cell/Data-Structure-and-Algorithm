@@ -1,0 +1,13 @@
+class Solution:
+    def getSecondLargest(self, arr):
+        # code here
+        largest=arr[0]
+        second=-1
+        for num in arr:
+            if num>largest:
+                second=largest
+                largest=num
+            elif num<largest and (second==-1 or num>second):
+                second=num
+                
+        return second
